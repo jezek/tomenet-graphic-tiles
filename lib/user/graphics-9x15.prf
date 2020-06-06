@@ -1,0 +1,637 @@
+# File: graphics-9x15.prf
+#
+# TomeNET graphics redefinitions for 9x15.bmp file.
+# This file defines special attr/char mappings for use in "graphics" mode.
+#
+
+####################
+#   Floor tiles.   #
+####################
+
+# N:1:open floor, G:.:w
+F:1:/0
+
+# N:2:fountain, G:_:Y
+F:2:/1
+
+# N:3:glyph of warding, G:;:y
+F:3:/2
+
+# N:4:open door, G:':U
+F:4:/3
+
+# N:5:broken door, G:':u
+F:5:15/4
+
+# N:6:up staircase, G:<:w
+F:6:/5
+
+# N:7:down staircase, G:>:w
+F:7:/6
+
+# N:8:quest entrance, G:>:y
+F:8:/7
+
+# N:9:quest exit, G:<:y
+F:9:/8
+
+# N:10:quest down level, G:>:r
+F:10:/9
+
+# N:11:quest up level, G:<:r
+F:11:/10
+
+# N:12:town exit, G:>:g
+F:12:/11
+
+# N:13:shaft down, G:>:U
+F:13:/12
+
+# N:14:shaft up, G:<:U
+F:14:/13
+
+# N:15:dried out fountain, G:_:W
+F:15:/14
+
+# N:16:webs, G:+:y
+F:16:/15
+
+# N:17:trap, G:^:W
+F:17:/16
+
+# N:18:crops, G:%:g
+F:18:/17
+
+# N:19:loose dirt, G:%:u
+F:19:/18
+
+# N:20:open door (to a home), G:':U
+# F:20:/19
+F:20:/3   # same as 4:open door, G:':U
+
+# N:21:signpost, #G:+:u
+F:21:/20
+
+# N:22:permanent wall (wilderness border), #G: :w
+# F:22:/21   # no need to redefine, tile is blank
+
+# N:23:logs (log cabin), G:=:u
+F:23:/22
+
+# N:24:drawbridge, G:=:u
+F:24:/23
+
+# N:25:closed door, G:+:U
+F:25:/24
+
+# N:26:permanent wall (for houses), G:#:w
+F:26:/25
+
+# N:27:fountain of blood, G:_:r
+# F:27:/26
+F:27:/1    # same as 2:fountain, G:_:Y
+
+# N:28:permanent wall (for houses, upper storeys), G:#:w
+# F:28:/27
+F:28:/25  # same as 26:permanent wall (for houses), G:#:w
+
+# N:29:permanent wall (fake), G:#:w, M:183
+# F:29:/28   # mimiks 183:permanent wall (dungeon boundary), G:#:w
+F:183:/25  # permanent wall (dungeon boundary), G:#:w
+
+# N:30:wooden table, G:=:u
+F:30:/29
+
+# N:31:open floor, G:.:5
+# F:31:/30
+F:31:/0    # same as 1:open floor, G:.:w
+
+# N:32:door (locked door - power 0), G:+:U, M:32
+# F:32:/31
+F:32:/24   # same as 25:closed door, G:+:U
+
+# N:33:locked door (power 1), G:+:U, M:32
+# F:33:/32   # mimiks 32:door (locked door - power 0), G:+:U, M:32
+
+# N:34:locked door (power 2), G:+:U, M:32
+# F:34:/33   # mimiks 32:door (locked door - power 0), G:+:U, M:32
+
+# N:35:locked door (power 3), G:+:U, M:32
+# F:35:/34   # mimiks 32:door (locked door - power 0), G:+:U, M:32
+
+# N:36:locked door (power 4), G:+:U, M:32
+# F:36:/35   # mimiks 32:door (locked door - power 0), G:+:U, M:32
+
+# N:37:locked door (power 5), G:+:U, M:32
+# F:37:/36   # mimiks 32:door (locked door - power 0), G:+:U, M:32
+
+# N:38:locked door (power 6), G:+:U, M:32
+# F:38:/37   # mimiks 32:door (locked door - power 0), G:+:U, M:32
+
+# N:39:locked door (power 7), G:+:U, M:32
+# F:39:/38   # mimiks 32:door (locked door - power 0), G:+:U, M:32
+
+# N:40:jammed door (power 0), G:+:U, M:32
+# F:40:/39   # mimiks 32:door (locked door - power 0), G:+:U, M:32
+
+# N:41:jammed door (power 1), G:+:U, M:32
+# F:41:/40   # mimiks 32:door (locked door - power 0), G:+:U, M:32
+
+# N:42:jammed door (power 2), G:+:U, M:32
+# F:42:/41   # mimiks 32:door (locked door - power 0), G:+:U, M:32
+
+# N:43:jammed door (power 3), G:+:U, M:32
+# F:43:/42   # mimiks 32:door (locked door - power 0), G:+:U, M:32
+
+# N:44:jammed door (power 4), G:+:U, M:32
+# F:44:/43   # mimiks 32:door (locked door - power 0), G:+:U, M:32
+
+# N:45:jammed door (power 5), G:+:U, M:32
+# F:45:/44   # mimiks 32:door (locked door - power 0), G:+:U, M:32
+
+# N:46:jammed door (power 6), G:+:U, M:32
+# F:46:/45   # mimiks 32:door (locked door - power 0), G:+:U, M:32
+
+# N:47:jammed door (power 7), G:+:U, M:32
+# F:47:/46   # mimiks 32:door (locked door - power 0), G:+:U, M:32
+
+# N:48:secret door, G:#:w, M:56
+# F:48:/47   # mimiks 56:granite wall (basic), G:#:s
+
+# N:49:pile of rubble, G:::s
+F:49:/48
+
+# N:50:magma vein, G:%:D
+F:50:/49
+
+# N:51:quartz vein, G:%:w
+F:51:/50
+
+# N:52:magma vein (treasure), G:%:D, M:50
+# F:52:/51   # mimiks 50:magma vein, G:%:D
+
+# N:53:quartz vein (treasure), G:%:w, M:51
+# F:53:/52   # mimiks 51:quartz vein, G:%:w
+
+# N:54:magma vein with treasure, G:*:o
+F:54:/53
+
+# N:55:quartz vein with treasure, G:*:o
+F:55:/54
+
+# N:56:granite wall (basic), G:#:s
+F:56:/55
+
+# N:57:granite wall (inner), G:#:s, M:56
+# F:57:/56   # mimiks 56:granite wall (basic), G:#:s
+
+# N:58:granite wall (outer), G:#:s, M:56
+# F:58:/57   # mimiks 56:granite wall (basic), G:#:s
+
+# N:59:granite wall (solid), G:#:s, M:56
+# F:59:/58   # mimiks 56:granite wall (basic), G:#:s
+
+# N:60:permanent wall (for stores), G:#:w
+F:60:/59
+
+# N:61:permanent wall (inner valut), G:#:w
+F:61:/60
+
+# N:62:permanent wall (outer valut), G:#:w
+# F:62:/61
+F:62:/60   # same as 61:permanent wall (inner valut), G:#:w
+
+# N:63:permanent wall (solid valut), G:#:w
+# F:63:/62
+F:63:/60   # same as 61:permanent wall (inner valut), G:#:w
+
+# N:64:rune of warding, G:;:B
+F:64:/63
+
+##### Seems, that roads are not used in any game map for now. #####
+
+# N:65:Straight Road startpoint, G:*:w
+# F:65:/64
+
+# N:66:section of the Straight Road, G:*:B
+# F:66:/65
+
+# N:67:section of the Straight Road, G:*:b
+# F:67:/66
+
+# N:68:section of the Straight Road, G:*:B
+# F:68:/67
+
+# N:69:section of the Straight Road, G:*:b
+# F:69:/68
+
+# N:70:section of the Straight Road, G:*:W
+# F:70:/69
+
+# N:71:section of the Straight Road (discharged), G:*:W
+# F:71:/70
+
+# N:72:Straight Road exit, G:*:w
+# F:72:/71
+
+# N:73:corrupted section of the Straight Road, G:*:D
+# F:73:/72
+
+##### Buildings in towns use '+' or numbers 0-9 as door char and can not be redefined now. #####
+# N:74:Building, G:1:U
+F:74:/73
+
+# N:75:permanent wall (quest), G:#:w
+# F:75:/74
+F:75:/25   # same as 26:permanent wall (for houses), G:#:w
+
+# N:76:permanent wall (quest), G:#:w
+# F:76:/75
+F:76:/25   # same as 26:permanent wall (for houses), G:#:w
+
+# N:77:permanent wall (quest), G:#:w
+# F:77:/76
+F:77:/25   # same as 26:permanent wall (for houses), G:#:w
+
+# N:78:permanent wall (quest), G:#:w
+# F:78:/77
+F:78:/25   # same as 26:permanent wall (for houses), G:#:w
+
+# N:79:permanent clear wall, G: :w
+# F:79:/78   # no need to remap, tile is blank
+
+# N:80:spirit wall (in Nether Realm), G:#:v
+# F:80:/79
+F:80:/25   # same as 26:permanent wall (for houses), G:#:w
+
+# N:81:steep mountain chain, G:^:u
+F:81:/80
+
+# N:82:solidified clouds, G:.:W
+F:82:/81
+
+# N:83:snow, G:.:w
+F:83:/82
+
+# N:84:stream of shallow water, G:~:B
+F:84:/83
+
+# N:85:pool of deep lava, G:~:R
+F:85:/84
+
+# N:86:stream of shallow lava, G:.:r
+F:86:/85
+
+# N:87:dark pit, G:^:D
+F:87:/86
+
+# N:88:dirt, G:.:u
+F:88:/87
+
+# N:89:patch of grass, G:.:G
+F:89:/88
+
+# N:90:ice, #G:.:W
+F:90:/89
+
+# N:91:sand, G:.:y
+F:91:/90
+
+# N:92:dead tree, #G:#:D
+F:92:/91
+
+# N:93:ash, G:.:D
+F:93:/92
+
+# N:94:mud, G:~:u
+F:94:/93
+
+# N:95:ice wall, G:#:B
+F:95:/94
+
+# N:96:tree, G:#:G
+F:96:/95
+
+# N:97:mountain chain, G:^:U
+F:97:/96
+
+# N:98:sandwall, G:#:y
+F:98:/97
+
+# N:99:sandwall (treasure), G:%:y, M:98
+# F:99:/98   # mimiks 98:sandwall, G:#:y
+
+# N:100:sandwall with treasure, G:*:o
+F:100:11/99
+
+# N:101:high mountain chain, G:^:w
+# F:101:/100
+F:101:/80  # same as 81:steep mountain chain, G:^:u
+
+# N:102:nether mist, G:.:v
+F:102:/101
+
+# N:103:glittering water, #G:~:b
+F:103:/102
+
+# N:104:high mountain chain (impassable by admins), G:^:w
+# F:104:/103
+F:104:/80  # same as 81:steep mountain chain, G:^:u
+
+# N:105:unstable void jumpgate, G:+:M
+F:105:/104
+
+# N:106:abyss, G: :d
+# F:106:/105 # no need to redefine, tile is blank
+
+# N:107:bottomless, cloudy sky, G:~:W
+F:107:/106
+
+# N:108:bottomless abyss, G: :w
+# F:108:/107 # no need to redefine, tile is blank
+
+# N:109:volcanic rock, G:.:D
+F:109:/108
+
+# N:110:puddle of water, G:~:B
+F:110:/109
+
+# N:111:Cordon, G:-:u
+F:111:/110
+
+# N:112:Cordon, G:|:u
+F:112:/111
+
+# N:113:Cordon, G:/:u
+F:113:/112
+
+# N:114:Cordon, G:\:u
+F:114:/113
+
+# N:115:Cordon, G:o:u
+F:115:/114
+
+# N:116:Bars, G:-:s
+# F:116:/115
+F:116:/110 # same as 111:Cordon, G:-:u
+
+# N:117:Bars, G:|:s
+# F:117:/116
+F:117:/111 # same as 112:Cordon, G:|:u
+
+# N:118:Bars, G:/:s
+# F:118:/117
+F:118:/112 # same as 113:Cordon, G:/:u
+
+# N:119:Bars, G:\:s
+# F:119:/118
+F:119:/113 # same as 114:Cordon, G:\:u
+
+# N:120:Bars, G:o:s
+# F:120:/119
+F:120:/114 # same as 115:Cordon, G:o:u
+
+##### Hole 121-158. #####
+
+# N:159:magma vein (permanent), G:%:D, M:50
+# F:159:/158 # mimiks 50:magma vein, G:%:D
+
+# N:160:void jumpgate, G:+:v
+# F:160:/159
+F:160:/104 # same as 105:unstable void jumpgate, G:+:M
+
+# N:161:altar of being, G:0:W
+F:161:/160
+
+# N:162:altar of winds, G:0:B
+# F:162:/161
+F:162:/160 # same as 161:altar of being, G:0:W
+
+# N:163:altar of force, G:0:R
+# F:163:/162
+F:163:/160 # same as 161:altar of being, G:0:W
+
+# N:164:altar of darkness, G:0:D
+# F:164:/163
+F:164:/160 # same as 161:altar of being, G:0:W
+
+# N:172:floor (use as marked for quests), G:.:r
+# F:172:/171
+F:172:/0   # same as 1:open floor, G:.:w
+
+# N:173:underground tunnel, G:#:D
+# F:173:/172
+F:173:/59  # same as 26:permanent wall (for houses), G:#:w
+
+# N:174:stream of tainted water, G:~:u
+# F:174:/173
+F:174:/83  # same as 84:stream of shallow water, G:~:B
+
+# N:175:monster trap, G:;:v
+# F:175:/174
+F:175:/16  # same as N:17:trap, G:^:W
+
+# N:176:Transport beacon, G:>:G
+# F:176:/175
+F:176:/6   # same as 7:down staircase, G:>:w
+
+# N:177:lava wall, G:#:R
+F:177:/176
+
+# N:178:great fire, G:%:v
+F:178:/177
+
+# N:179:path to the next area, G:>:w
+# F:179:/178
+F:179:/6   # same as 7:down staircase, G:>:w
+
+# N:180:path to the previous area, G:<:w
+# F:180:/179
+F:180:/5   # same as 6:up staircase, G:<:w
+
+# N:181:field, G:::g
+# F:181:/180
+F:181:/17  # same as 18:crops, G:%:g
+
+# N:182:Ekkaia, the Encircling Sea, G:*:b
+# F:182:/181
+F:182:/102 # same as 103:glittering water, #G:~:b
+
+# N:183:permanent wall, G:#:w
+# F:183:/182
+F:183:/59  # same as 60:permanent wall (for stores), G:#:w
+
+##### Hole 184-186. #####
+
+# N:187:pool of deep water, G:~:b
+# F:187:/186
+F:187:/102 # same as 103:glittering water, #G:~:b
+
+# N:188:glass wall, G:#:B
+F:188:/187
+
+# N:189:illusion wall, G:#:w
+# F:189:/188
+F:189:/55  # same as 56:granite wall (basic), G:#:s
+
+# N:190:Grass roof, G:#:U
+F:190:/189
+
+# N:191:grass roof top, G:#:U
+# F:191:/190
+F:191:/189 # same as 190:Grass roof, G:#:U (not drawing, cause seems not used)
+
+# N:192:grass roof chimney, G:#:U
+# F:192:/191
+F:192:/189 # same as 190:Grass roof, G:#:U (not drawing, cause seems not used)
+
+# N:193:brick roof, G:#:r
+F:193:/192
+
+# N:194:brick roof top, G:#:r
+F:194:/193
+
+# N:195:brick roof chimney, G:":r
+F:195:/194
+
+# N:196:window, G:#:W
+# F:196:/195 # not drawing, cause seems not used
+
+# N:197:small window, G:#:W
+# F:197:/196 # not drawing, cause seems not used
+
+# N:198:rain barrel, G:#:W
+# F:198:/197 # not drawing, cause seems not used
+
+# N:199:grass with flowers, G:;:G
+F:199:/198
+
+# N:200:cobblestone road, G:.:w
+F:200:/199
+
+# N:201:cobblestone with outlet, G:.:w
+# F:201:/200
+F:201:/199 # same as 200:cobblestone road, G:.:w (not drawing, cause seems not used)
+
+# N:202:ivy, G:#:g
+F:202:/201
+
+# N:203:town, G:*:w
+# F:203:/202 # not drawing, cause seems not used
+
+# N:204:underground tunnel, G:^:u
+F:204:/203
+
+# N:205:blazing fire, G:%:y
+F:205:/204
+
+# N:206:pile of rubble (permanent), G:::s
+# F:206:/205
+F:206:/48  # same as 49:pile of rubble, G:::s
+
+# N:207:rocky ground, G:.:s
+F:207:/206
+
+# N:208:team A goal, G:.:R
+F:208:/207
+
+# N:209:team B goal, G:.:b
+F:209:/208
+
+# N:210:protected floor, G:.:u
+F:210:/209
+
+# N:211:decorative shallow water, G:~:B
+# F:211:/210
+F:211:/83  # same as 84:stream of shallow water, G:~:B
+
+# N:212:decorative violet crystal, G:*:v
+F:212:/211
+
+# N:213:decorative blue crystal, G:*:b
+# F:213:/212
+F:213:/211 # same as 212:decorative violet crystal, G:*:v
+
+# N:214:decorative green crystal, G:*:G
+# F:214:/213
+F:214:/211 # same as 212:decorative violet crystal, G:*:v
+
+# N:215:decorative yellow crystal, G:*:y
+# F:215:/214
+F:215:/211 # same as 212:decorative violet crystal, G:*:v
+
+# N:216:decorative orange crystal, G:*:o
+# F:216:/215
+F:216:/211 # same as 212:decorative violet crystal, G:*:v
+
+# N:217:decorative red crystal, G:*:r
+# F:217:/216
+F:217:/211 # same as 212:decorative violet crystal, G:*:v
+
+# N:218:decorative deep lava, G:~:R
+# F:218:/217
+F:218:/84  # same as 85:pool of deep lava, G:~:R
+
+# N:219:bush, G:*:G
+F:219:/218
+
+# N:220:Player 1 Trail (Arcade), G:#:R
+F:220:/219
+
+# N:221:Player 2 Trail (Arcade), G:#:b
+# F:221:/220
+F:221:/219 # same as 220:Player 1 Trail, G:#:R
+
+# N:222:Player 3 Trail (Arcade), G:#:y
+# F:222:/221
+F:222:/219 # same as 220:Player 1 Trail, G:#:R
+
+# N:223:Player 4 Trail (Arcade), G:#:u
+# F:223:/222
+F:223:/219 # same as 220:Player 1 Trail, G:#:R
+
+# N:224:sealed door (PvP-Arena), G:+:r
+# F:224:/223
+F:224:/24  # same as 25:closed door, G:+:U
+
+# N:225:unsealed door (PvP-Arena), G:':r
+# F:225:/224
+F:225:/3   # same as 4:open door, G:':U
+
+# N:226:highly protected floor, G:.:U
+# F:226:/225
+F:226:/209 # same as N:210:protected floor, G:.:u
+
+# N:227:orange wall (Arcade), G:#:o
+# F:227:/226
+F:227:/25  # same as 26:permanent wall (for houses), G:#:w
+
+# N:228:ai tron dood (Arcade), G:@:s
+F:228:/227
+
+# N:229:moving powerup (Arcade), G:*:y
+F:229:/228
+
+# N:230:sealed door (Quest escape), G:+:r
+# F:230:/229
+F:230:/24  # same as 25:closed door, G:+:U
+
+# N:231:sickbay exit, G:+:g
+# F:231:/230
+F:231:/24  # same as 25:closed door, G:+:U
+
+# N:232:sickbay area, G:_:u
+F:232:/231
+
+# N:233:Iridescent Gate, G:+:M
+# F:233:/232
+F:233:/24  # same as 25:closed door, G:+:U
+
+# N:234:grand mirror, G:&:c
+F:234:/233
+
+# N:235:shattered mirror, G:_:c
+F:235:/234
+
+# N:236:barred floor, G:.:w
+# F:236:/235
